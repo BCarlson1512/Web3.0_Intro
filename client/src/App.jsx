@@ -1,5 +1,5 @@
 import React from "react";
-import {Navbar, Welcome, Footer, Transactions, Services} from './components'
+import {Navbar, Welcome, Footer, Transactions, Services} from './components';
 
 const App = () => {
 
@@ -13,7 +13,7 @@ const App = () => {
       <Transactions />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

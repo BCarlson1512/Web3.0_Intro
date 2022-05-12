@@ -18,5 +18,10 @@
         "react"
     ],
     "rules": {
+        "semi":"warn",
+        "react/prop-types": "off",
+        "prefer-arrow-callback": "warn",
+        "no-unused-vars": "warn",
+        "camelcase": "warn"
     }
 }

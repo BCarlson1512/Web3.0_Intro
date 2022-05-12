@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 
 import { TransactionContext } from '../context/TransactionContext';
-import dummyData from '../utils/dummyData';
 import { shortenAddress } from '../utils/shortenAddress';
 import useFetch from '../hooks/useFetch';
 
@@ -32,7 +31,7 @@ const TransactionCard = ({addressTo, addressFrom, timestamp, message, keyword, a
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 const Transactions = () => {
@@ -52,7 +51,7 @@ const Transactions = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Transactions
+export default Transactions;

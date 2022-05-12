@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {BsShieldFillCheck} from 'react-icons/bs';
 import {BiSearchAlt} from 'react-icons/bi';
 import {RiHeart2Fill} from 'react-icons/ri';
@@ -14,8 +14,8 @@ const ServiceCard = ({color, title, icon, subtitle}) => {
         <p className="mt-2 text-white text-sm m:w-9/12"> {subtitle} </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const Services = () => {
   return (
@@ -49,7 +49,7 @@ const Services = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

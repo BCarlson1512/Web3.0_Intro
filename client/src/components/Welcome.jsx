@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
-import { AiFillPlayCircle } from 'react-icons/ai'
-import { SiEthereum } from 'react-icons/si'
-import { BsInfoCircle } from 'react-icons/bs'
+import React, { useContext } from 'react';
+import { AiFillPlayCircle } from 'react-icons/ai';
+import { SiEthereum } from 'react-icons/si';
+import { BsInfoCircle } from 'react-icons/bs';
 
-import { TransactionContext } from '../context/TransactionContext'
-import { Loader } from './'
+import { TransactionContext } from '../context/TransactionContext';
+import { Loader } from './';
 import { shortenAddress } from '../utils/shortenAddress';
 
 
@@ -19,8 +19,8 @@ const Input = ({placeholder, name, type, value, handleChange}) => {
     onChange={(e) => handleChange(e, name)} 
     className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-small white-glassmorphism"
     />
-  )
-}
+  );
+};
 
 const Welcome = () => {
   const { connectWallet, connectedAccount, formData, setFormData, handleChange, sendTransaction, isLoading } = useContext(TransactionContext);
@@ -31,7 +31,7 @@ const Welcome = () => {
 
     if (!addressTo || !amount || !keyword || !message) return;
     sendTransaction();
-  }
+  };
 
   return (
     <div className="flex w-full justify-center items-center">
@@ -107,7 +107,7 @@ const Welcome = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Welcome
+export default Welcome;
